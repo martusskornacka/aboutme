@@ -15,30 +15,21 @@
     <title>Costi</title>
   </head>
   <body>
-    <div class="wrapper col-s-12">
-      <nav class="nav">
-        <ul class="menu">
-          <li class="menu__item"><a href="#">O mnie</a></li>
-          <li class="menu__item"><a href="#">Oferta</a></li>
-          <ul class="dropdown">
-            <li class="dropdown_item">
-              <a href="#">Plany dietetyczne</a>
-            </li>
-            <li class="dropdown_item"><a href="#">Pierwsza wizyta</a></li>
-            <li class="dropdown_item"><a href="#">Cennik</a></li>
-          </ul>
-          <li class="menu__item"><a href="#">Ciekawostki dietetyczne</a></li>
-          <li class="menu__item"><a href="#">Kontakt</a></li>
-        </ul>
-
+    <div class="sidepanel" id="mySidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+      <a href="#">O mnie</a>
+      <a href="#">Oferta</a>
+      <a href="#">Ciekawostki dietetyczne</a>
+      <a href="#">Kontakt</a>
         <input type="text" placeholder="Szukaj" />
         <buttom type="button" name="submit">Szukaj</buttom>
-      </nav>
+      
     </div>
+    <button class="openbtn" onclick="openNav()">☰</button>
     <div class="wrapper">
       <div class="row">
         <div class="banner col-s-12">
-          <img src="images/background.jpg" alt="background" class="img-fluid" />
+          <img src="images/color.jpg" alt="background" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -56,18 +47,78 @@
           <div style="margin-bottom:10px; font-size: 1.8em;  color:blue">
             <i class="fas fa-check-circle"></i>
           </div>
-          <h3>Stwórz własną listę zakupów</h3>
+          <h3 style="margin-bottom:10px;">Stwórz własną listę zakupów</h3>
           <form action="">
             <input type="text" class="second" placeholder="Dodaj produkt" />
             <button>Dodaj produkt:</button>
           </form>
-          <h4>Liczba produktów<span>0</span></h4>
+          <h4 style="margin-top: 10px">Liczba produktów<span> 0</span></h4>
           <ul id="lists"></ul>
         </div>
-        <div class="col-s-4"></div>
+        <div class="col-s-4" style="text-align: center">
+          <div style="margin-bottom:10px; font-size: 1.8em;  color:blue">
+            <i class="fas fa-shopping-basket"></i>
+          </div>
+          <h4>Cała przygoda zaczyna się w sklepie</h4>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper" style="margin:50px 0 50px 0">
+      <div class="row">
+        <div class="col-s-6">
+          <img src="images/food.jpg" class="img-fluid" alt="food" />
+        </div>
+        <div class="col-s-6">
+          <h4 style="margin-bottom: 10px; text-transform:upperCase">
+            Dlaczego tak waznym jest zdrowe odzywianie?
+          </h4>
+          <button class="collapsible">
+            <i style="color: green" class="far fa-check-circle"></i> Zmniejsza
+            ryzyko wystąpienia chorób cywilizacyjnych
+          </button>
+          <div class="content">
+            <ul>
+              <li>
+                cukrzyca
+              </li>
+              <li>choroby wieńcowe</li>
+              <li>nadciśnienie tętnicze</li>
+              <li>otyłość</li>
+              <li>zawał serca</li>
+            </ul>
+          </div>
+          <button class="collapsible">
+              <i style="color: green" class="far fa-check-circle"></i> Właściwe
+              odzywianie wpływa na poprawę nastroju
+            </button>
+            <div class="content"> 
+              <p>Jedna z teorii zakłada, ze spozycie węglowodanów wpływa na podwyzszenie stęzenia serotoniny. 
+          </p>
+          <p>Serotonina ma szeroki zakres działania m.in. wpływa na regulację snu, apetetytu, poprawia nastrój</p>
+          <p>Z wyzej wymienionych względów kobiety w okresie przed miesiączką mają ochotę na słodkości - głównie czekoladę</p>
+          <img src="images/chocolate.jpg" alt="chocolate" style="text-align: right" class="img-fluid"> 
+        </div>
       </div>
     </div>
 
+    <div class="wraper">
+      <div class="row">
+        <div class="col-s-6">
+
+        </div>
+        <div class="col-s-6">
+          <img src="images/trainee.jpg" alt="trainee" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <script>
+    function openNav(){
+      document.getElementById('mySidepanel').style.width = "250px";
+    }
+    function closeNav(){
+      document.getElementById('mySidepanel').style.width = "0";
+    }
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
