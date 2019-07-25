@@ -25,10 +25,11 @@
         <buttom type="button" name="submit">Szukaj</buttom>
       
     </div>
-    <button class="openbtn" onclick="openNav()">☰</button>
+   
     <div class="wrapper">
       <div class="row">
         <div class="banner col-s-12">
+            <button class="openbtn" onclick="openNav()">☰</button>
           <img src="images/color.jpg" alt="background" class="img-fluid" />
         </div>
       </div>
@@ -79,12 +80,12 @@
           <div class="content">
             <ul>
               <li>
-                cukrzyca
+                  <i class="far fa-check-circle"></i> cukrzyca
               </li>
-              <li>choroby wieńcowe</li>
-              <li>nadciśnienie tętnicze</li>
-              <li>otyłość</li>
-              <li>zawał serca</li>
+              <li><i class="far fa-check-circle"></i> choroby wieńcowe</li>
+              <li><i class="far fa-check-circle"></i> nadciśnienie tętnicze</li>
+              <li><i class="far fa-check-circle"></i> otyłość</li>
+              <li><i class="far fa-check-circle"></i> zawał serca</li>
             </ul>
           </div>
           <button class="collapsible">
@@ -101,16 +102,34 @@
       </div>
     </div>
 
-    <div class="wraper">
+    <div class="wraper" style="margin:20px 0 20px 0">
       <div class="row">
         <div class="col-s-6">
-
-        </div>
+<h5 style="text-transform: uppercase; text-align: center; margin-bottom:20px">Mówi się, ze sport to zdrowie..Dlaczego?</h5>
+<p style="margin-bottom: 20px;"><i style="color: green" class="far fa-check-circle"></i> Warunkuje prawidłowy rozwój organizmu człowieka</p>
+<p style="margin-bottom: 20px;"><i style="color: green; margin-bottom:10px" class="far fa-check-circle"></i> Przyczynia się do uwrazliwiania tkanek na insulinę</p>
+<p style="margin-bottom: 20px;"><i style="color: green; margin-bottom:10px" class="far fa-check-circle"></i> Regularna aktywność fizyczna powoduje zmniejszanie masy ciała. Profilaktyka otyłości.</p>
+<button class="button button1" onmousemove="change()" style="text-align: right"><a href="sport.html" style="text-decoration: none; color:black" >Czytaj więcej</a></button>        
+</div>
         <div class="col-s-6">
           <img src="images/trainee.jpg" alt="trainee" class="img-fluid">
         </div>
       </div>
     </div>
+
+<div class="wrapper" style="background-color:  #efebe9">
+  <div class="row">
+    <div class="col-s-12">
+      <h4 class="header" style="margin-bottom: 20px;">Do Sylwestra pozostało:</h4>
+      <h4 class="time"><i class="far fa-clock" style="font-size:2em"></i>
+        <span class="d"></span> dni
+        <span class="h"></span> h
+        <span class="m"></span> min
+        </h4>
+    </div>
+  </div>
+</div>
+
     <script>
     function openNav(){
       document.getElementById('mySidepanel').style.width = "250px";
@@ -118,6 +137,9 @@
     function closeNav(){
       document.getElementById('mySidepanel').style.width = "0";
     }
+    function change() {
+    document.getElementByClassName('button').style.backgroundColor = "#FF3D00";
+}
     </script>
     <script src="main.js"></script>
   </body>
