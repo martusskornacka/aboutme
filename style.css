@@ -4,7 +4,6 @@
 }
 
 @media only screen and (min-width: 600px) {
-
   /* For tablets: */
   .col-s-1 {
     width: 8.33%;
@@ -56,7 +55,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   /* For desktop: */
   .col-1 {
     width: 8.33%;
@@ -234,6 +232,10 @@ ul {
   background-color: lightgray;
 }
 
+.button1:hover {
+  background-color: pink;
+}
+
 .header {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -244,4 +246,53 @@ ul {
   font-size: 1.1em;
   color: black;
   text-align: center;
+}
+
+.owl {
+  position: absolute;
+  min-width: auto;
+  min-height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+
+.stext {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-shadow: 0 0 6px white;
+}
+
+.img-fluid.dots {
+  position: absolute;
+  bottom: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots span {
+  display: inline-block;
+  background-color: lightgray;
+  margin: 0 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px white;
+}
+
+.dots span:active {
+  box-shadow: 0 0 0 5px white, 0 0 3px 10px blue;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.item1 li:hover {
+  cursor: pointer;
 }
