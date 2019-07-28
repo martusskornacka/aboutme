@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Costi</title>
   </head>
@@ -109,7 +110,7 @@
 <p style="margin-bottom: 20px;"><i style="color: green" class="far fa-check-circle"></i> Warunkuje prawidłowy rozwój organizmu człowieka</p>
 <p style="margin-bottom: 20px;"><i style="color: green; margin-bottom:10px" class="far fa-check-circle"></i> Przyczynia się do uwrazliwiania tkanek na insulinę</p>
 <p style="margin-bottom: 20px;"><i style="color: green; margin-bottom:10px" class="far fa-check-circle"></i> Regularna aktywność fizyczna powoduje zmniejszanie masy ciała. Profilaktyka otyłości.</p>
-<button class="button button1" onmousemove="change()" style="text-align: right"><a href="sport.html" style="text-decoration: none; color:black" >Czytaj więcej</a></button>        
+<button class="button button1" onclick="change()"style="text-align: right"><a href="sport.html" style="text-decoration: none; color:black" >Czytaj więcej</a></button>        
 </div>
         <div class="col-s-6">
           <img src="images/trainee.jpg" alt="trainee" class="img-fluid">
@@ -126,6 +127,39 @@
         <span class="h"></span> h
         <span class="m"></span> min
         </h4>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="row">
+    <div class="col-s-12">
+      <img class="slider img-fluid" class="owl" src="images/blueberry.jpg" alt="">
+      
+      <div class="dots">
+        <span id="dot1" class="active"></span>
+        <span id="dot2"></span>
+        <span id="dot3"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="row">
+    <div class="col-s-6">
+
+    </div>
+
+    <div class="col-s-6">
+      <h5 style="font-size: 1em">Twoja lista to do</h5>
+      <form class="ListItems"> 
+        <input type="text" class="texty" name="input2" placeholder="Wpisz zadanie..">
+      </form>
+        <button id="newList">Dodaj zadanie</button>
+        <ol></ol>
+  
+    
     </div>
   </div>
 </div>
